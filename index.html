@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title-section">
+                <h1>2048</h1>
+                <p class="subtitle">合并方块，达到 2048！</p>
+            </div>
+            <div class="scores-container">
+                <div class="score-box">
+                    <div class="score-label">分数</div>
+                    <div class="score-value" id="score">0</div>
+                </div>
+                <div class="score-box">
+                    <div class="score-label">最高分</div>
+                    <div class="score-value" id="best-score">0</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="new-game-button" id="new-game">新游戏</button>
+            <p class="instructions">使用 <strong>方向键</strong> 移动方块</p>
+        </div>
+        
+        <div class="game-container">
+            <div class="grid-container" id="grid-container"></div>
+            <div class="tile-container" id="tile-container"></div>
+        </div>
+        
+        <div class="game-message" id="game-message">
+            <div class="message-content">
+                <p id="message-text">游戏结束!</p>
+                <button class="retry-button" id="retry-button">再试一次</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
